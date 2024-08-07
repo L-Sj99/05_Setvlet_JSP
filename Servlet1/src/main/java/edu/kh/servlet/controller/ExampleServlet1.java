@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-/* jakarqa.servelt.http.HttpServlet
+/* jakarta.servelt.http.HttpServlet
  * - http 프로토콜 서비스를 지원하는 추상 클래스
  * -> 상속 받아서 사용
  * 
@@ -50,7 +50,7 @@ public class ExampleServlet1 extends HttpServlet{
 		
 		/* 서버 -> 클라이언트 응답처리 
 		 * 1. 서버에서 HTML 코드를 만들어 클라이언트에게 전달 == 응답(response)
-		 * 2. 클라이언트의 브라우저가 응답 받은 HTML 코드를 해걱해 화면을 보여줌
+		 * 2. 클라이언트의 브라우저가 응답 받은 HTML 코드를 해석해 화면을 보여줌
 		 */
 		
 		// 응답 처리 1. 응답하는 문서의 형식과 문자 인코딩 지정

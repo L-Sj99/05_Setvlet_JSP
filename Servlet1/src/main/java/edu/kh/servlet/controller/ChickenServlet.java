@@ -93,7 +93,6 @@ public class ChickenServlet extends HttpServlet{
 		
 		sb.append("</body>");
 		sb.append("</html>");
-		
 		out.write(sb.toString()); // HTML 클라이언트에게 출력하기
 	}
 
