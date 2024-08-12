@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Map;
 
+import edu.kh.todolist.dto.Todo;
+
 public interface TodoListService {
 	/**  할 일 목록 반환 서비스
 	 * @return todoList + 완료 개수
@@ -25,7 +27,7 @@ public interface TodoListService {
 	 * @param index
 	 * @return index 번째 todo 상세 정보, 없으면 null 반환
 	 */
-	public abstract String todoDetailView(int index);
+	public abstract Todo todoDetailView(int index);
 
 
 

@@ -18,7 +18,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class MainServlet extends HttpServlet{
 	
 	/* "/" 메인 페이지 요청을 처리하는 서블릿을 만든 이유
-	 * - Servlet(Back-end)에서 추가한 데이터를 메인 페이지에서 사용할 수 있게 하려기 위해
+	 * - Servlet(Back-end)에서 추가한 데이터를 메인 페이지에서 사용할 수 있게 하.기 위해
 	 */
 	
 	@Override

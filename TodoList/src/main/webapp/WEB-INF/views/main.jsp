@@ -20,7 +20,7 @@
       제목 : <input type="text" name="title">
     </div>
     <div>
-      <textarea name="detaiol" cols="50" rows="3" placeholder="상세 내용"></textarea>
+      <textarea name="detail" cols="50" rows="3" placeholder="상세 내용"></textarea>
     </div>
     <button>추가</button>
   </form>
@@ -41,11 +41,14 @@
         <tr>
           <th>${vs.count}</th>
           <td>
-            <a href="#">${todo.title}</a>
+          <%-- 제목 클릭 시 
+          인덱스 번호를 이용하여  todoList의 인덱스 번째 요소 내용 조회하기
+          (쿼리스트링 이용 : 주소?K=V&K=V&....) --%>
+            <a href="/todo/detail?index=${vs.index}">${todo.title}</a>
           </td>
           <th>
-            <c:if test="${todo.complete}" >O</c:if>
-            <c:if test="${not todo.complete}" >X</c:if>
+            <c:if test="${todo.complete}" > O </c:if>
+            <c:if test="${not todo.complete}" > X </c:if>
           </th>
           <td>${todo.regDate}</td>
         </tr>
@@ -63,8 +66,7 @@
     <%-- message를 한번만 출력하고 제거 --%>
     <c:remove var="message" scope="session" />
   </c:if>
-
-
+  <hr>
 <script src="/resources/js/main.js"></script>
 </body>
 </html>
