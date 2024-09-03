@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,11 +15,12 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class Todo implements Serializable{
-							// 직렬화
-	
+@Builder
+public class Todo { 
 	private String title;
 	private String detail;
 	private boolean complete;
 	private LocalDateTime regDate;
+	
+	
 }
